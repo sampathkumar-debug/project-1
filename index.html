@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hello world</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      color: #f7f2e8;
+      font-family: Inter, system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 20% 18%, rgba(87,212,201,.28), transparent 30rem),
+        radial-gradient(circle at 82% 72%, rgba(239,123,123,.22), transparent 32rem),
+        linear-gradient(135deg, #101114, #1c2430 46%, #141414);
+    }
+    main {
+      width: min(92vw, 820px);
+      padding: clamp(32px, 7vw, 72px);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 8px;
+      background: linear-gradient(145deg, rgba(255,255,255,.14), rgba(255,255,255,.04));
+      box-shadow: 0 28px 90px rgba(0,0,0,.45);
+      backdrop-filter: blur(22px);
+      position: relative;
+      overflow: hidden;
+    }
+    .eyebrow {
+      color: #b8c0cc;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: clamp(4rem, 16vw, 9rem);
+      line-height: .86;
+    }
+    h1 span {
+      color: transparent;
+      background: linear-gradient(90deg, #f0c75e, #57d4c9, #fff);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    p {
+      max-width: 560px;
+      color: #b8c0cc;
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Fresh from your workspace</p>
+    <h1>Hello <span>World</span></h1>
+    <p>A tiny page with soft glass, warm color, and a little shine.</p>
+  </main>
+</body>
+</html>
